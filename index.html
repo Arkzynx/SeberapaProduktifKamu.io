@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeberapaProduktifKamu.io</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container" id="startPage">
+    <h1>Seberapa Produktif Kamu?</h1>
+    <label for="name">Masukkin Nama:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <button type="button" class="submit-btn" onclick="startQuiz()">Mulai Kuis</button>
+</div>
+
+<div class="container" id="quizPage" style="display: none;">
+    <h1 id="questionTitle">Jawab Pertanyaan Berikut</h1>
+    <form id="quizForm">
+        <div id="questionContainer">
+            <!-- Pertanyaan akan dimuat di sini menggunakan JavaScript -->
+        </div>
+        <button type="button" class="submit-btn" onclick="nextQuestion()">Berikutnya</button>
+    </form>
+</div>
+
+<div class="container" id="resultPage" style="display: none;">
+    <h1>Hasil Kuis</h1>
+    <p id="nickname"></p>
+    <p id="description"></p>
+    <button type="button" class="submit-btn" onclick="restartQuiz()">Coba Lagi</button>
+</div>
+
+<div class="footer">
+    <div class="footer-box">
+        <p>Developed by <a href="https://www.instagram.com/arkantamazk/" target="_blank">Arkan</a></p>
+        <p>Support aku di<a href="https://saweria.co/Arkantamaa?utm_medium=social&utm_source=heylink.me" target="_blank">Saweria</a></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
